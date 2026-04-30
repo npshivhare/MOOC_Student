@@ -177,7 +177,7 @@ def plot_community_sizes(communities: List[List], algorithm: str) -> go.Figure:
         ),
         text=sizes,
         textposition="outside",
-        textfont=dict(color="#e8e8e8"),
+        texttemplate="<b>%{text}</b>",
     ))
     fig.update_layout(
         title=dict(text=f"Community Sizes — {algorithm}", font=dict(size=15, color="#e8e8e8"), x=0.5),
