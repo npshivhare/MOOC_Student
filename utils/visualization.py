@@ -173,7 +173,7 @@ def plot_community_sizes(communities: List[List], algorithm: str) -> go.Figure:
             color=sizes,
             colorscale="Viridis",
             showscale=True,
-            colorbar=dict(title="Size", tickfont=dict(color="#ccc"), titlefont=dict(color="#ccc")),
+            colorbar=dict(title="Size", tickfont=dict(color="#ccc")),
         ),
         text=sizes,
         textposition="outside",
@@ -334,7 +334,7 @@ def plot_behavioral_heatmap(semantic_data: List[Dict]) -> go.Figure:
         y=metric_labels,
         colorscale="Viridis",
         showscale=True,
-        colorbar=dict(title="Normalized", tickfont=dict(color="#ccc"), titlefont=dict(color="#ccc")),
+        colorbar=dict(title="Normalized", tickfont=dict(color="#ccc")),
         hovertemplate="Community: %{x}<br>Metric: %{y}<br>Value: %{z:.2f}<extra></extra>",
     ))
     fig.update_layout(
