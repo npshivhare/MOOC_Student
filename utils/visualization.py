@@ -69,7 +69,7 @@ def plot_graph_plotly(
     pos = _compute_layout(layout, list(G_plot.edges()), node_list)
 
     unique_labels = sorted(set(labels_plot))
-    cmap = plt.cm.get_cmap("tab20", max(len(unique_labels), 1))
+    cmap = plt.get_cmap("tab20", max(len(unique_labels), 1))
     color_map = {}
     for i, lab in enumerate(unique_labels):
         r, g, b, _ = cmap(i % 20)
